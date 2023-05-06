@@ -10,7 +10,6 @@ bspc config split_ratio				0.50
 bspc config borderless_monocle		true
 bspc config gapless_monocle			true
 bspc config focus_follows_pointer	true
-bspc config left_padding			50
 
 # BSPWM Aesthetics
 bspc config border_width			2
@@ -22,7 +21,8 @@ bspc config focused_border_color	"#7FB4CA"
 
 
 #Autostart
-fcitx -d
+#fcitx -d
 xsetroot -cursor_name left_ptr
+polybar
 
 
