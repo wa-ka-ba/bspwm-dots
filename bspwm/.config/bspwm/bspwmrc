@@ -3,6 +3,7 @@
 pgrep -x sxhkd > /dev/null || sxhkd &
 
 # Monitors
+bspc monitor -g 1920x1080+0+0
 bspc monitor -d 1 2 3 4 5
 
 # BSPWM behaviour
@@ -12,17 +13,20 @@ bspc config gapless_monocle			true
 bspc config focus_follows_pointer	true
 
 # BSPWM Aesthetics
-bspc config border_width			2
-bspc config window_gap				12
+bspc config border_width			3
+bspc config window_gap				14
 bspc config normal_border_color		"#3F3F3F"
-bspc config focused_border_color	"#7FB4CA"
+bspc config focused_border_color	"#f4b8e4"
 
 # BSPWM rules
 
 
 #Autostart
-#fcitx -d
+fcitx -d
 xsetroot -cursor_name left_ptr
-polybar
-
+polybar -q workspace &
+polybar -q launch &
+polybar -q power &
+polybar -q date &
+polybar -q vol &
 
