@@ -85,9 +85,11 @@ _open_files_for_editing() {
 # alias pacdiff=eos-pacdiff
 ################################################################################
 
-
 #JP Fonts
 export GTK_IM_MODULE='fcitx'
 export QT_IM_MODULE='fcitx'
 export SDL_IM_MODULE='fcitx'
 export XMODIFIERS='@im=fcitx'
+
+# Alias
+alias neofetch="neofetch --kitty ~/.config/neofetch/image.png"
