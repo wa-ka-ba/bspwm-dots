@@ -12,7 +12,7 @@ super + Return
 
 # program launcher
 super + r
-	$HOME/.config/rofi/launchers/type-7/launcher.sh
+	$HOME/.config/rofi/launchers/type-3/launcher.sh
 
 # firefox
 super + b
@@ -24,7 +24,7 @@ super + e
 	
 # power menu
 super + p
-	$HOME/.config/rofi/powermenu/type-5/powermenu.sh
+	$HOME/.config/rofi/powermenu/type-4/powermenu.sh
 
 ###############	
 # BSPWM STUFF #

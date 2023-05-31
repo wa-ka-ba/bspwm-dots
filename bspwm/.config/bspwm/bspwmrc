@@ -24,9 +24,10 @@ bspc config focused_border_color	"#f4b8e4"
 #Autostart
 fcitx -d
 xsetroot -cursor_name left_ptr
+#picom --experimental-backend
 polybar -q workspace &
 polybar -q launch &
 polybar -q power &
 polybar -q date &
 polybar -q vol &
-
+polybar -q spotify &
