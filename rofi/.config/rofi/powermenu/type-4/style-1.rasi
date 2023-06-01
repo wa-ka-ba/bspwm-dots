@@ -24,11 +24,11 @@ configuration {
     element-padding:             55px 60px;
     element-border-radius:       100%;
 
-    prompt-font:                 "JetBrains Mono Nerd Font Bold Regular 64";
-    textbox-font:                "JetBrains Mono Nerd Font 16";
+    prompt-font:                 "Sofia Pro Light Regular 64";
+    textbox-font:                "Sofia Pro Light Regular 16";
     element-text-font:           "feather 64";
 
-    background-window:           black/5%;
+    background-window:           black/80%;
     background-normal:           white/5%;
     background-selected:         white/15%;
     foreground-normal:           white;
