@@ -91,7 +91,7 @@ case ${chosen} in
         ;;
     $lock)
 		if [[ -x '/usr/bin/betterlockscreen' ]]; then
-			betterlockscreen -l
+			betterlockscreen -l blur 1
 		elif [[ -x '/usr/bin/i3lock' ]]; then
 			i3lock
 		fi
