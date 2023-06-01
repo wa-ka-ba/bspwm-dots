@@ -21,11 +21,7 @@ else
 fi
 sleep 3
 
-# Clone git repository
-echo "Cloning git repository.."
-cd
-git clone https://github.com/wa-ka-ba/bspwm-dots.git
-sleep 3
+# Moving files to respective directories
 echo "Moving files to the right directories..."
 cd bspwm-dots
 sudo pacman -S stow		#Installs stow
@@ -35,10 +31,10 @@ sleep 3
 
 # Install packages from the arch repo
 echo "Installing packages from the arch repo..."
-sudo pacman -S bspwm dunst kitty neofetch polybar rofi sxhkd playerctl geany lxappearance-gtk3 nemo ttf-hanazono fcitx-im fcitx-configtool fcitx-mozc 
+sudo pacman -S bspwm dunst kitty neofetch polybar rofi sxhkd playerctl geany lxappearance-gtk3 nemo ttf-hanazono fcitx-im fcitx-configtool fcitx-mozc feh arandr network-manager-applet lxsession-gtk3 notification-daemon 
 sleep 2
 echo "installing packages from the aur..."
-yay -S zscroll ttf-material-design-iconic-font nerd-fonts-jetbrains-mono-160 ttf-meslo-nerd betterlockscreen picom-pijulius-git papirus-folders-catppuccin-git 
+yay -S zscroll ttf-material-design-iconic-font nerd-fonts-jetbrains-mono-160 ttf-meslo-nerd betterlockscreen picom-pijulius-git papirus-folders-catppuccin-git neo-matrix
 sleep 2
 
 # Install papirus folder
@@ -56,4 +52,5 @@ sudo mv locale.gen /etc/locale.gen
 sudo locale-gen
 
 # Final steps
-echo "Installation done. Please restart and log back in. Then, change the wallpaper using nitrogen and change the theme with lxappearance."
+echo "Installation done. Please restart and log back in. Then, change the wallpaper using nitrogen and change the theme with lxappearance. Lastly, add mozc to keyboard layouts using fcitx."
+sleep 5
