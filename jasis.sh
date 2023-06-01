@@ -29,6 +29,7 @@ sudo pacman -S stow		#Installs stow
 sleep 2
 stow */
 sleep 3
+cd
 
 # Install packages from the arch repo
 echo "Installing packages from the arch repo..."
@@ -37,6 +38,7 @@ sleep 2
 echo "installing packages from the aur..."
 yay -S zscroll ttf-material-design-iconic-font nerd-fonts-jetbrains-mono-160 ttf-meslo-nerd betterlockscreen picom-pijulius-git papirus-folders-catppuccin-git neo-matrix
 sleep 2
+cd
 
 # Install papirus folder
 echo "Installing folder theme..."
