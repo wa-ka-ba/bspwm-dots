@@ -32,7 +32,7 @@ sleep 3
 
 # Install packages from the arch repo
 echo "Installing packages from the arch repo..."
-sudo pacman -S bspwm dunst kitty neofetch polybar rofi sxhkd playerctl geany lxappearance-gtk3 nemo ttf-hanazono fcitx-im fcitx-configtool fcitx-mozc feh arandr network-manager-applet lxsession-gtk3 notification-daemon 
+sudo pacman -S bspwm nitrogen dunst kitty neofetch polybar rofi sxhkd playerctl geany lxappearance-gtk3 nemo ttf-hanazono fcitx-im fcitx-configtool fcitx-mozc feh arandr network-manager-applet lxsession-gtk3 notification-daemon 
 sleep 2
 echo "installing packages from the aur..."
 yay -S zscroll ttf-material-design-iconic-font nerd-fonts-jetbrains-mono-160 ttf-meslo-nerd betterlockscreen picom-pijulius-git papirus-folders-catppuccin-git neo-matrix
@@ -43,6 +43,7 @@ echo "Installing folder theme..."
 wget -qO- https://git.io/papirus-icon-theme-install | sh
 sleep 2
 echo "Applying catppuccin folder theme..."
+yay -S papirus-folders-catppuccin-git
 papirus-folders -C cat-frappe-pink 
 sleep 2
 
