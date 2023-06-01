@@ -15,6 +15,7 @@ cd
 BASH=~/.bashrc
 if [ -f "$BASH" ]; then
 	echo "$BASH file found. Deleting..."
+	rm .bashrc
 else
 	echo "$BASH does not exist. Moving on."
 	
