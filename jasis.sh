@@ -33,7 +33,7 @@ cd
 
 # Install packages from the arch repo
 echo "Installing packages from the arch repo..."
-sudo pacman -S bspwm nitrogen dunst kitty neofetch polybar rofi sxhkd playerctl geany lxappearance-gtk3 nemo ttf-hanazono fcitx-im fcitx-configtool fcitx-mozc feh arandr network-manager-applet lxsession-gtk3 notification-daemon stalonetray
+sudo pacman -S bspwm nitrogen dunst kitty neofetch polybar rofi sxhkd playerctl geany lxappearance-gtk3 nemo ttf-hanazono fcitx-im fcitx-configtool fcitx-mozc feh arandr network-manager-applet lxsession-gtk3 notification-daemon stalonetray gvfs gvfs-afc gvfs-gphoto2 gvfs-mtp gvfs-nfs gvfs-smb
 sleep 2
 echo "installing packages from the aur..."
 yay -S zscroll ttf-material-design-iconic-font nerd-fonts-jetbrains-mono-160 ttf-meslo-nerd betterlockscreen picom-pijulius-git papirus-folders-catppuccin-git neo-matrix
@@ -49,7 +49,13 @@ yay -S papirus-folders-catppuccin-git
 papirus-folders -C cat-frappe-pink 
 sleep 2
 
+# Setting lockscreen
+echo "Setting lockscreen..."
+betterlockscreen -u $HOME/bspwm-dots/bspwm/.config/bspwm/wallpapers/58023966_p0_waifu2x_noise1_scale2x.png
+sleep 2 
+
 # Generate locales for Japanese text
+echo "Generating locales for Japanese text..."
 cd
 cd bspwm-dots
 sudo mv locale.gen /etc/locale.gen 
