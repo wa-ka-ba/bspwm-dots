@@ -25,6 +25,10 @@ super + e
 # power menu
 super + p
 	$HOME/.config/rofi/powermenu/type-4/powermenu.sh
+	
+# lock screen
+super + shift + l
+	betterlockscreen -l blur 1
 
 ###############	
 # BSPWM STUFF #
