@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Just A Simple Install Script for this bspwm rice by wakaba
-echo "This script will install all the necessary packages for this rice and then move all the config files to the right directories."
+echo "Welsome to JASIS: Just A Simple Install Script made by wakaba. This script will install all the necessary packages for this rice and then move all the config files to the right directories."
 sleep 5
-echo "This script assumes that you are using a freshly installed Arch-based distribution. I can't be bothered to make this for other distros."
+echo "This script assumes that you are using an Arch-based distribution. I can't be bothered to make this for other distros."
 sleep 5
 echo "Lastly, this script also assumes that you already have yay installed."
 sleep 3
@@ -35,7 +35,7 @@ cd
 echo "Installing packages from the arch repo..."
 sudo pacman -S bspwm nitrogen dunst kitty neofetch polybar rofi sxhkd playerctl geany lxappearance-gtk3 nemo ttf-hanazono fcitx-im fcitx-configtool fcitx-mozc feh arandr network-manager-applet lxsession-gtk3 notification-daemon stalonetray gvfs gvfs-afc gvfs-gphoto2 gvfs-mtp gvfs-nfs gvfs-smb
 sleep 2
-echo "installing packages from the aur..."
+echo "Installing packages from the aur..."
 yay -S zscroll ttf-material-design-iconic-font nerd-fonts-jetbrains-mono-160 ttf-meslo-nerd betterlockscreen picom-pijulius-git papirus-folders-catppuccin-git neo-matrix
 sleep 2
 cd
@@ -49,11 +49,6 @@ yay -S papirus-folders-catppuccin-git
 papirus-folders -C cat-frappe-pink 
 sleep 2
 
-# Setting lockscreen
-echo "Setting lockscreen..."
-betterlockscreen -u $HOME/bspwm-dots/bspwm/.config/bspwm/wallpapers/58023966_p0_waifu2x_noise1_scale2x.png
-sleep 2 
-
 # Generate locales for Japanese text
 echo "Generating locales for Japanese text..."
 cd
@@ -62,5 +57,5 @@ sudo mv locale.gen /etc/locale.gen
 sudo locale-gen
 
 # Final steps
-echo "Installation done. Please restart and log back in. Then, change the wallpaper using nitrogen and change the theme with lxappearance. Lastly, add mozc to keyboard layouts using fcitx."
+echo "Installation done. Please restart and log back in. Then, change the wallpaper using nitrogen and change the theme with lxappearance. Also, setup the lockscreen wallpaper with betterlockscreen. Lastly, add mozc to keyboard layouts using fcitx."
 sleep 5
