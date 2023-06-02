@@ -57,5 +57,5 @@ sudo mv locale.gen /etc/locale.gen
 sudo locale-gen
 
 # Final steps
-echo "Installation done. Please restart and log back in. Then, change the wallpaper using nitrogen and change the theme with lxappearance. Also, setup the lockscreen wallpaper with betterlockscreen. Lastly, add mozc to keyboard layouts using fcitx."
+echo "Installation done. Please restart and log back in. Then, setup the lockscreen wallpaper with betterlockscreen. Lastly, add mozc to keyboard layouts using fcitx."
 sleep 5
