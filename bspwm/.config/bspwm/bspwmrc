@@ -24,6 +24,7 @@ bspc rule -a Yad state=floating
 #Autostart
 fcitx -d
 xsetroot -cursor_name left_ptr
+nm-applet
 feh --bg-center ~/.config/bspwm/wallpapers/58023966_p0_waifu2x_noise1_scale2x.png
 #picom --experimental-backend
 polybar -q workspace &
