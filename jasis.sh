@@ -34,11 +34,11 @@ cd
 # Install packages from the arch repo
 echo "Installing packages from the arch repo..."
 sleep 3
-sudo pacman -S bspwm nitrogen dunst xorg-xsetroot kitty neofetch polybar rofi sxhkd playerctl geany lxappearance-gtk3 nemo ttf-hanazono fcitx-im fcitx-configtool fcitx-mozc feh arandr network-manager-applet lxsession-gtk3 notification-daemon stalonetray gvfs gvfs-afc gvfs-gphoto2 gvfs-mtp gvfs-nfs gvfs-smb pavucontrol
+sudo pacman -S bspwm nitrogen dunst xorg-xsetroot kitty neofetch polybar rofi sxhkd playerctl geany lxappearance-gtk3 nemo ttf-meslo-nerd ttf-hanazono fcitx-im fcitx-configtool fcitx-mozc feh arandr network-manager-applet lxsession-gtk3 notification-daemon stalonetray gvfs gvfs-afc gvfs-gphoto2 gvfs-mtp gvfs-nfs gvfs-smb pavucontrol
 sleep 2
 echo "Installing packages from the aur..."
 sleep 3
-yay -S zscroll ttf-material-design-iconic-font nerd-fonts-jetbrains-mono-160 ttf-meslo-nerd betterlockscreen picom-pijulius-git papirus-folders-catppuccin-git neo-matrix
+yay -S zscroll ttf-material-design-iconic-font nerd-fonts-jetbrains-mono-160 betterlockscreen picom-pijulius-git papirus-folders-catppuccin-git neo-matrix
 sleep 2
 cd
 
