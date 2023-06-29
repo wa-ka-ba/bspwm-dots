@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Just A Simple Install Script for this bspwm rice by wakaba
-echo "Welsome to JASIS: Just A Simple Install Script made by wakaba. This script will install all the necessary packages for this rice and then move all the config files to the right directories."
+echo "Welcome to JASIS: Just A Simple Install Script made by wakaba. This script will install all the necessary packages for this rice and then move all the config files to the right directories."
 sleep 5
 echo "This script assumes that you are using an Arch-based distribution. I can't be bothered to make this for other distros."
 sleep 5
