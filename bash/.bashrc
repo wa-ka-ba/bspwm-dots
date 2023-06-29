@@ -95,4 +95,4 @@ export XMODIFIERS='@im=fcitx'
 alias neofetch="neofetch --kitty ~/.config/neofetch/image.png"
 alias killorphans="pacman -Qtdq | sudo pacman -Rns -"
 alias s="startx"
-alias matrix="neo-matrix -D -m'haruki/gaia'"
+alias matrix="neo-matrix -D -m'$USER/$HOSTNAME'"
