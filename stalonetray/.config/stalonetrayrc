@@ -19,7 +19,7 @@ background "#303446"
                              # decspec are: all, title, border, none
 decorations border
 
-# display <display name>     # as usual
+#display DVI-D-0    	 # as usual
 
 # dockapp_mode <mode>        # set dockapp mode, which can be either simple (for
                              # e.g. OpenBox, wmaker for WindowMaker, or none
@@ -34,7 +34,8 @@ fuzzy_edges 0
 
 # geometry <geometry>        # tray's geometry in standard X notation; width and
                              # height are specified in slot_size multiples
-geometry 1x1+1816+72
+#geometry 1x1+1816+72
+geometry 1x1+3730+72
 
 # grow_gravity <gravity>     # one of N, S, E, W, NW, NE, SW, SE; tray will grow
                              # in the direction opposite to one specified by

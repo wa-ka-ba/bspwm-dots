@@ -3,8 +3,11 @@
 pgrep -x sxhkd > /dev/null || sxhkd &
 
 # Monitors
-bspc monitor -g 1920x1080+0+0
-bspc monitor -d 1 2 3 4 5
+#bspc monitor -g 1920x1080+0+0
+xrandr --output DVI-D-0 --primary --mode 1920x1080 --rotate normal --output HDMI-0 --mode 1920x1080 --rotate normal --left-of DVI-D-0
+bspc wm -O DVI-D-0 HDMI-0 
+bspc monitor DVI-D-0 -d 1 2 3 4 5 
+bspc monitor HDMI-0 -d 6 7 8 9 0
 
 # BSPWM behaviour
 bspc config split_ratio				0.50
@@ -25,12 +28,9 @@ bspc rule -a Yad state=floating
 fcitx -d
 xsetroot -cursor_name left_ptr
 nm-applet &
-feh --bg-center ~/.config/bspwm/wallpapers/58023966_p0_waifu2x_noise1_scale2x.png
-#picom --experimental-backend
-killall polybar
-polybar -q workspace &
-polybar -q launch &
-polybar -q power &
-polybar -q date &
-polybar -q vol &
-polybar -q spotify &
+feh --bg-center $HOME/.config/bspwm/wallpapers/58023966_p0.png
+picom --experimental-backend &
+$HOME/.config/polybar/scripts/launch.sh
+sleep 1
+$HOME/.config/polybar/scripts/launch.sh
+

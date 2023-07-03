@@ -14,9 +14,9 @@ super + Return
 super + r
 	$HOME/.config/rofi/launchers/type-3/launcher.sh
 
-# firefox
+# browser
 super + b
-	firefox
+	librewolf
 
 # file manager
 super + e
@@ -29,6 +29,10 @@ super + p
 # lock screen
 super + shift + l
 	betterlockscreen -l blur 1
+
+# flameshot 
+super + shift + s
+	flameshot gui
 
 ###############	
 # BSPWM STUFF #
