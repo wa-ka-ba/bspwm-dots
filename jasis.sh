@@ -38,7 +38,7 @@ sudo pacman -S bspwm nitrogen dunst xorg-xsetroot kitty neofetch polybar rofi sx
 sleep 2
 echo "Installing packages from the aur..."
 sleep 3
-yay -S zscroll ttf-material-design-iconic-font nerd-fonts-jetbrains-mono-160 betterlockscreen picom-allusive papirus-folders-catppuccin-git neo-matrix
+yay -S zscroll ttf-material-design-iconic-font nerd-fonts-jetbrains-mono-160 betterlockscreen picom-allusive papirus-folders-catppuccin-git neo-matrix bibata-cursor-theme-bin
 sleep 2
 cd
 
